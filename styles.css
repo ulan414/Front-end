@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: auto;
+  }
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    top: 0; 
+    width: 100%; 
+  }
+
+.Header{
+    background-color: #2e2e2e; 
+    padding: 10px; 
+    text-align: center;
+    height: 10vh;
+    width:100%;
+    position: fixed; 
+}
+.logoImg{
+    float: left;
+    height:145%;
+    display: block; 
+    margin-top:-1%; 
+    margin-left:3%;
+}
+.LogoName{
+    float: left;
+    margin-left:2%;
+    color:White;
+    margin-top:1%; 
+}
+.icons{
+    height:auto;
+    background-color: red;
+}
+.icon, .icon1{
+    float: left;
+    height:55%;
+    display: block; 
+    margin-top:1%; 
+    margin-left:1%;
+}
+.icon1{
+margin-left:5%;
+}
+.searchBox{
+    width: 200px; 
+    padding: 8px;
+    border-radius: 5px; 
+    margin-left:-22%;
+    background-color: #454545;
+    margin-top:1%;
+}
+.loginButton {
+    padding: 8px 12px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer; 
+    float: right;
+    margin-right:5%;
+    margin-top:1%;
+}
+.Navbar {
+    /* background-color: #2e2e2e; */
+    height: auto;
+    flex: 0 0 20%;
+    /* border: solid red 2px; */
+    margin-left:0%;
+    margin-top:5%;
+}
+.Navbar hr{
+    border: 1px solid red;
+    width:50%;
+    margin-left:45%;
+}
+.Navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    margin-top:15%;
+}
+
+.Navbar li {
+    /* text-align: left; */
+    color: #fff; 
+    margin-bottom: 15%; 
+    text-align: center;
+    margin-top:5%;
+    margin-bottom:5%;
+    /* border: solid green 5px; */
+}
+.HoverNav, .HoverNav1{
+    /* background-color: red; */
+    border-radius:10px;
+    text-align:center;
+    margin-left: 40%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top:5%;
+}
+.HoverNav:hover {
+    background-color: #454545; /* Set the background color for the hover effect */
+    cursor: pointer;   
+}
+.HoverNav1{
+    font-size:10px;
+}
+.Main{
+    margin-top:7%;
+    height:auto;
+    background-color: #2e2e2e;
+    color: white;
+    float:right;
+    flex: 0 0 45%;
+    border-radius: 15px;
+    margin-left:1%;
+}
+.Main ul{
+    margin-left: 0;
+}
+.Main li{
+    list-style-type: none;
+    margin-bottom:2%;
+}
+.Main li:nth-child(3n) {
+    font-weight: bold; 
+    font-size:12px;
+    color:#494949;
+  }
+.General{
+    display: flex;
+    justify-content: space-between;
+}
+.Options{
+    flex: 0 0 25%;    
+    background-color:#2e2e2e;
+    margin-top:7%;
+    margin-left:1%;
+    border-radius:15px;
+    margin-right:10%;
+    color: white;
+    height: 140px;
+}
+.Options li{
+    list-style-type: none;
+    margin-bottom:1%;
+    margin-left:0;
+}
+.option1{
+    list-style-type: none;
+    background-color:#454545;
+    padding: 5px;
+    border-radius:5px;
+    margin-left:-10%;
+    margin-right:3%;
+}
+.option{
+    list-style-type: none;
+    padding: 5px;
+    border-radius:5px;
+    margin-left:-10%;
+}
+.option:hover{
+    background-color:#454545;
+}
+.hrMessage {
+    border: 1px solid #454545; 
+    margin-bottom: 20px;
+}
+.hrOptiones{
+    border: 1px solid #454545; 
+    margin-left:-11.5%;
+}
+.OnePerson{
+    /* background-color: red; */
+    border-radius:10px;
+    padding:8px;
+    margin-top:-1%;
+}
+.OnePerson:hover {
+    background-color: #454545; /* Set the background color for the hover effect */
+    cursor: pointer;   
+}
+.optin{
+    background-color:#2e2e2e;
+}
+.NavbarPhone{
+    display: none;
+    width:100%;
+    height:10hv;
+    background-color:red;
+}
+@media screen and (max-width: 501px) {
+    .NavbarPhone{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .HoverNav1{
+        background-color:red;
+        list-style-type: none;
+        flex: 0 0 25%;    
+    }
+    
+    .Main {
+      max-width: none;
+      /* background-color: lightblue; */
+      flex: 0 0 98%;
+      margin-top:19%;
+    }
+    .searchBox{
+        display: none;
+    }
+    .Navbar{
+        display: none;
+    }
+    .Options{
+        display: none;
+    }
+    .logoImg
+    {
+        height:110%;
+    }
+    .LogoName{
+        font-size:30px;
+    }
+    .icon, .icon1{
+        height:70%;
+    }
+    .Header{
+        height:50px;
+        margin-bottom:50px;
+    }
+  }
